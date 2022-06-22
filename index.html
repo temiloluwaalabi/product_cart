@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ba4b2e8aca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Sneakers</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="mobile-icon">
+                <i class="mobile-icon-bars fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <div class="mobile-close">
+                        <i class="mobile-icon-close fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <li>Collections</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="profile">
+                <div class="cart-image">
+                    <img id="cart" src="images/icon-cart.svg" alt="">
+                    <div class="cart">
+                            <div class="card-header">
+                                <h4>Cart</h4>
+                            </div>
+                            <div class="cart-details">
+                                <img src="images/image-product-1-thumbnail.jpg" alt="">
+                                <div class="cart-product-details">
+                                    <h6>Fall Limited Sneakers</h6>
+                                    <span>$125.00 x 3 <b class="bold-cart">$375.00</b></span>
+                                </div>
+                                <img class="delete-icon" src="images/icon-delete.svg" alt="">
+                            </div>
+                            <div class="button">
+                                <button>Checkout</button>
+                            </div>
+                            
+                    </div>
+                </div>
+
+                <div class="profile-image">
+                    <img src="images/image-avatar.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-image">
+            <img class="main-image" src="images/image-product-1.jpg" alt="">
+            <a class="prevMobile">&#10094;</a>
+            <a class="nextMobile">&#10095;</a>
+            <div class="product-thumbnail">
+                <img class="thumbnail-one" src="images/image-product-1-thumbnail.jpg" alt="">
+                <div class="overlay-one"></div>
+                <img class="thumbnail-two" src="images/image-product-2-thumbnail.jpg" alt="">
+                <div class="overlay-two"></div>
+                <img class="thumbnail-three" src="images/image-product-3-thumbnail.jpg" alt="">
+                <div class="overlay-three"></div>
+                <img class="thumbnail-four" src="images/image-product-4-thumbnail.jpg" alt="">
+                <div class="overlay-four"></div>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <span class="sneaker">SNEAKER COMPANY</span>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer</p>
+            <div class="product-price">
+                <h4>$125.00</h4>
+                <span>50%</span>
+            </div>
+           <strike>$250.00</strike>
+
+           <div class="add-to-cart">
+               <div class="product-increase">
+                   <img src="images/icon-minus.svg" alt="">
+                   <span>3</span>
+                   <img src="images/icon-plus.svg" alt="">
+               </div>
+
+               <div class="add-cart">
+                   <i class="fas fa-shopping-cart add-cart-img"></i>
+                   <!-- <img class="add-cart-img" src="images/icon-cart.svg" alt=""> -->
+                   <h6>Add to cart</h6>
+               </div>
+           </div>
+        </div>
+    </main>
+
+
+    <section class="lightbox">
+        <div class="lightbox-inner">
+            <img class="close-icon" src="images/icon-close.svg" alt="">
+            <!-- <div class="slides">
+                <img class="main-image-slide" src="images/image-product-1.jpg" alt="">
+            </div> -->
+            <div class="main-slide slides">
+                <img class="main-image-carousel" src="images/image-product-1.jpg" alt="">
+            </div>
+            <div class="slide hidden-image">
+                <img class="main-image-carousel" src="images/image-product-1.jpg" alt="">
+            </div>
+            <div class="slide hidden-image">
+                <img class="main-image-carousel" src="images/image-product-2.jpg" alt="">
+            </div>
+            <div class="slide hidden-image">
+                <img class="main-image-carousel" src="images/image-product-3.jpg" alt="">
+            </div>
+            <div class="slide hidden-image">
+                <img class="main-image-carousel" src="images/image-product-4.jpg" alt="">
+            </div>
+             
+            <!-- Next/previous controls -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+            <div class="product-thumbnail-carousel">
+                <img class="modal-preview thumbnail-one" src="images/image-product-1-thumbnail.jpg" alt="" onclick="toSlide(1)">
+                <div class="overlay-one"></div>
+                <img class="modal-preview thumbnail-two" src="images/image-product-2-thumbnail.jpg" alt="" onclick="toSlide(2)">
+                <div class="overlay-two"></div>
+                <img class="modal-preview thumbnail-three" src="images/image-product-3-thumbnail.jpg" alt="" onclick="toSlide(3)">
+                <div class="overlay-three"></div>
+                <img class="modal-preview thumbnail-four" src="images/image-product-4-thumbnail.jpg" alt="" onclick="toSlide(4)">
+                <div class="overlay-four"></div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

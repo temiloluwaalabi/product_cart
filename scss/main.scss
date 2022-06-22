@@ -1,0 +1,186 @@
+@import 'config', 'main','responsive';
+
+@function weight($weight-name){
+    @return map-get($font-weight, $weight-name);
+}
+
+body{
+    height: 100vh;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 90px;
+    padding: 0 60px;
+
+    // .mobile-icon{
+    //     display: none;
+    // }
+
+    nav{
+        height: 90px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $grayish-blue;
+
+
+        .mobile-icon{
+            display: none;
+        }
+    }
+    .menu{
+        margin-right: auto;
+        margin-left: 20px;
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 30px;
+            list-style: none;
+            padding: 10px 30px;
+
+
+            .mobile-close{
+                display: none;
+            }
+
+            li{
+                height: 90px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 0 10px;
+                font-size: 1.0rem;
+                font-size: weight(regular);
+            }
+
+            
+            li:active {
+                border-bottom: 4px solid $primary-orange-color;
+            }
+        }        
+    }
+
+    .profile{
+        display: flex;
+        align-items: center;
+
+        .cart-image{
+            height: 70px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+
+            img{
+                cursor: pointer;
+            }
+
+            .cart.show{
+                opacity: 1;
+            }
+            .cart{
+                padding: 10px 0;
+                padding-bottom: 20px;
+                z-index: 100;
+                background-color: white;
+                box-shadow: -2px 15px 45px 5px rgba(79,79,79,0.75);
+                -webkit-box-shadow: -2px 15px 45px 5px rgba(79,79,79,0.75);
+                -moz-box-shadow: -2px 15px 45px 5px rgba(79,79,79,0.75);
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                top: 60px;
+                width: 300px;
+                height: 210px;
+                border-radius: 6px;
+                opacity: 0;
+                pointer-events: none;
+
+                .card-header{
+                    padding: 10px 25px;
+                    height: 20%;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid $grayish-blue;
+
+                    h4{
+                        font-size: 1rem;
+                    }
+                }
+                .cart-details{
+                    padding: 0 25px;
+                    height: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+
+                    img{
+                        width: 20%;
+                        border-radius: 6px;
+                    }
+
+                    .cart-product-details{
+                        height: 40%;
+                        h6{
+                            font-size: 0.9rem;
+                        }
+                        span, .bold-cart{
+                            font-size: 0.7rem;
+                        }
+                    }
+                    .delete-icon{
+                        width: 18px;
+                        height: 18px;
+                        cursor: pointer;
+                    }
+                    
+                }
+
+                .button{
+                    height: 25%;
+                    padding: 0 20px;
+
+                    button{
+                        margin-top: 5px;
+                        background-color: $primary-orange-color;
+                        color: $white;
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 6px;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 0.9rem;
+                    }
+                }
+                
+            }
+        }
+
+
+        .profile-image{
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+
+            img{
+                border: 2px solid $primary-orange-color;
+                border-radius: 50%;
+                padding: 5px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
